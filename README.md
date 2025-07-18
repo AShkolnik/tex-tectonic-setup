@@ -1,6 +1,7 @@
-# Tex Writing Setup
+# Tex Tectonic Setup
 
-This repository is bundling rust tools like tectonic and just with an example structure to enable academic writing out of the box.
+This repository is a setup configuration to making writing LaTeX documents easier.
+The idea is to use Tectonic together with Just to allow fast and deterministic out-of-the-box development in LaTeX.
 
 ## Installation
 
