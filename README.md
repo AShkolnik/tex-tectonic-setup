@@ -11,15 +11,21 @@ Just copy the below commands.
 
 #### Debian/Ubuntu
 
-```sudo apt install curl```
+```
+sudo apt install curl
+```
 
 #### Fedora
 
-```sudo dnf install curl```
+```
+sudo dnf install curl
+```
 
 #### Arch
 
-```sudo pacman -S curl```
+```
+sudo pacman -S curl
+```
 
 #### Windows & MacOS
 
@@ -36,7 +42,9 @@ rustup update
 
 #### Windows
 
-```Invoke-WebRequest -Uri https://sh.rustup.rs -UseBasicParsing | Invoke-Expression```
+```
+Invoke-WebRequest -Uri https://sh.rustup.rs -UseBasicParsing | Invoke-Expression
+```
 
 Run `rustup update` after restarting PowerShell.
 
@@ -46,7 +54,9 @@ Run `rustup update` after restarting PowerShell.
 #### Debian/Ubuntu
 
 Local `tectonic` installation: 
-```curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh```
+```
+curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh
+```
 
 Global `tectonic` installation: 
 ```
