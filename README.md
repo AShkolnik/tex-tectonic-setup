@@ -43,8 +43,6 @@ Run `rustup update` after restarting PowerShell.
 
 ### Installing Tectonic, Just, Biber and watchexec-cli
 
-I kept the installation of tectonic to the local repository only. 
-
 #### Debian/Ubuntu
 
 Local tectonic installation: `curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh`
