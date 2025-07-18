@@ -1,15 +1,33 @@
 \documentclass[a4paper,12pt]{report}
 \usepackage{amsmath, amssymb}
 \usepackage[utf8]{inputenc}
-\usepackage[backend=biber,style=authoryear]{biblatex}
+\usepackage[backend=biber,style=numeric]{biblatex}
 \usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
 \addbibresource{references.bib}
 
 \title{Tectonic Test Document}
 \author{Your Name}
 \date{\today}
 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\fancyhead[L]{\leftmark}
+
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[C]{\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+% Use fancyhdr for all pages
+\pagestyle{plain}
+
 \begin{document}
+
+% Roman page numbers for front matter
+\pagenumbering{roman}
 
 % Custom Cover Sheet
 \begin{titlepage}
@@ -37,9 +55,15 @@
 \tableofcontents
 \clearpage
 
+% Switch to arabic page numbering from here, start at 1
+\pagenumbering{arabic}
+
 \input{chapters/ch1.tex}
 \input{chapters/ch2.tex}
 
-\printbibliography
+\defbibheading{bibintocnumbered}[Bibliography]{%
+  \chapter{#1}
+}
+\printbibliography[heading=bibintocnumbered]
 
 \end{document}
