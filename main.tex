@@ -1,0 +1,25 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{amsmath, amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\usepackage[hidelinks]{hyperref}
+\addbibresource{references.bib}
+
+\title{Tectonic Test Document}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\cleardoublepage
+\tableofcontents
+\clearpage
+
+\input{chapters/ch1.tex}
+\input{chapters/ch2.tex}
+
+\printbibliography
+
+\end{document}
