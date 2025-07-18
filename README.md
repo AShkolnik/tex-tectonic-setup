@@ -75,6 +75,12 @@ cargo install watchexec-cli
 sudo apt install biber
 ```
 
+## Preview Tools
+
+Whenever `just watch` is running in the background, there is a need for a viewer of the generated and updated pdf file.
+For Linux there is a pdf viewer with auto-reload called `zathura`, which is officially packaged in most linux distributions.
+For a Windows alternative, there is SumatraPDF found here: [Download](https://www.sumatrapdfreader.org/download-free-pdf-viewer)
+
 ## Motivation
 
 Since most tools are either slow or add unnecessary complexity I tried to keep it powerful enough to justify the additional dependencies.
