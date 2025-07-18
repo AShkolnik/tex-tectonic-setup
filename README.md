@@ -66,7 +66,7 @@ sudo chmod +x /usr/local/bin/tectonic
 exec $SHELL
 ```
 
-Add `/usr/local/bin` to your PATH, depending on your used shell this can be differently done.
+Add `/usr/local/bin` to your PATH, depending on your shell this can be done differently.
 
 Installing just, watchexec-cli and biber
 ```
