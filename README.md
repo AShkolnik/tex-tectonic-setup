@@ -11,15 +11,15 @@ Just copy the below commands.
 
 #### Debian/Ubuntu
 
-`sudo apt install curl`
+```sudo apt install curl```
 
 #### Fedora
 
-`sudo dnf install curl`
+```sudo dnf install curl```
 
 #### Arch
 
-`sudo pacman -S curl`
+```sudo pacman -S curl```
 
 #### Windows & MacOS
 
@@ -36,7 +36,7 @@ rustup update
 
 #### Windows
 
-`Invoke-WebRequest -Uri https://sh.rustup.rs -UseBasicParsing | Invoke-Expression`
+```Invoke-WebRequest -Uri https://sh.rustup.rs -UseBasicParsing | Invoke-Expression```
 
 Run `rustup update` after restarting PowerShell.
 
@@ -45,8 +45,10 @@ Run `rustup update` after restarting PowerShell.
 
 #### Debian/Ubuntu
 
-Local tectonic installation: `curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh`
-Global tectonic installation: 
+Local `tectonic` installation: 
+```curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh```
+
+Global `tectonic` installation: 
 ```
 curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh
 sudo mv tectonic /usr/local/bin/
@@ -54,6 +56,7 @@ sudo chmod +x /usr/local/bin/tectonic
 rm tectonic
 hash -r
 ```
+
 Add `/usr/local/bin` to your PATH, depending on your used shell this can be differently done.
 
 Installing just, watchexec-cli and biber
