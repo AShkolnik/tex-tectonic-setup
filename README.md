@@ -78,7 +78,13 @@ sudo apt install biber
 ## Preview Tools
 
 Whenever `just watch` is running in the background, there is a need for a viewer of the generated and updated pdf file.
+
+### Zathura (Linux)
+
 For Linux there is a pdf viewer with auto-reload called `zathura`, which is officially packaged in most linux distributions.
+
+### Sumatra (Windows)
+
 For a Windows alternative, there is SumatraPDF found here: [Download](https://www.sumatrapdfreader.org/download-free-pdf-viewer)
 
 ## Motivation
