@@ -7,6 +7,24 @@ The idea is to use Tectonic together with Just to allow fast and deterministic o
 
 Just copy the below commands.
 
+### Installing Curl
+
+#### Debian/Ubuntu
+
+`sudo apt install curl`
+
+#### Fedora
+
+`sudo dnf install curl`
+
+#### Arch
+
+`sudo pacman -S curl`
+
+#### Windows & MacOS
+
+For Windows and Linux there is a dedicated documentation found here: [Installing Curl](https://developer.zendesk.com/documentation/api-basics/getting-started/installing-and-using-curl/#installing-curl)
+
 ### Installing Rust
 
 #### Linux & MacOS
@@ -16,6 +34,36 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup update
 ```
 
+#### Windows
+
+`Invoke-WebRequest -Uri https://sh.rustup.rs -UseBasicParsing | Invoke-Expression`
+
+Run `rustup update` after restarting PowerShell.
+
+
+### Installing Tectonic, Just, Biber and watchexec-cli
+
+I kept the installation of tectonic to the local repository only. 
+
+#### Debian/Ubuntu
+
+Local tectonic installation: `curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh`
+Global tectonic installation: 
+```
+curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh
+sudo mv tectonic /usr/local/bin/
+sudo chmod +x /usr/local/bin/tectonic
+rm tectonic
+hash -r
+```
+Add `/usr/local/bin` to your PATH, depending on your used shell this can be differently done.
+
+Installing just, watchexec-cli and biber
+```
+cargo install just
+cargo install watchexec-cli
+sudo apt install biber
+```
 
 ## Motivation
 
