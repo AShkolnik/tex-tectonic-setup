@@ -63,8 +63,7 @@ Global `tectonic` installation:
 curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh
 sudo mv tectonic /usr/local/bin/
 sudo chmod +x /usr/local/bin/tectonic
-rm tectonic
-hash -r
+exec $SHELL
 ```
 
 Add `/usr/local/bin` to your PATH, depending on your used shell this can be differently done.
