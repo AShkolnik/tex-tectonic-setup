@@ -5,8 +5,6 @@ pdf := "main.pdf"
 
 build:
     tectonic --keep-intermediates --synctex --outdir=. {{main_tex}}
-    biber main
-    tectonic --keep-intermediates --synctex --outdir=. {{main_tex}}
 
 clean:
     rm -f *.aux *.bbl *.bcf *.blg *.log *.out *.run.xml *.toc {{pdf}}
